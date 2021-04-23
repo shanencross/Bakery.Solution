@@ -1,5 +1,5 @@
 namespace Bakery.Models {
-  public class OurModel {
+  public class Bread {
 
   }
 }
