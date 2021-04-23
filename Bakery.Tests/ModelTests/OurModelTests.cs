@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CSharpTemplate.Models;
+using Bakery.Models;
 
-namespace CSharpTemplate.Tests {
+namespace Bakery.Tests {
   [TestClass]
   public class OurModelTests {
     [TestMethod]
