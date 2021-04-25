@@ -1,17 +1,13 @@
 namespace Bakery.Models 
 {
-  public class Bread 
+  public class Bread : MenuItem
   {
     public static int PricePerItem { get; } = 5;
-    public int Count { get; }
-    public int TotalPrice { get; }
 
     public static string MenuMessage { get; }
 
-    public Bread(int count)
+    public Bread(int count) : base(count)
     {
-      Count = count;
-      TotalPrice = CalculatePrice();
     }
 
     static Bread()
@@ -19,7 +15,7 @@ namespace Bakery.Models
       MenuMessage = GetMenuMessage();
     }
 
-    private int CalculatePrice()
+    protected override int CalculatePrice()
     {
       int totalPrice = PricePerItem * (Count - (Count / 3));
       return totalPrice;
