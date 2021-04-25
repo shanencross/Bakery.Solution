@@ -7,6 +7,12 @@ namespace Bakery.Models {
     public Bread(int count)
     {
       Count = count;
+      TotalPrice = CalculatePrice();
+    }
+
+    private int CalculatePrice()
+    {
+      return -1;
     }
   }
 }
