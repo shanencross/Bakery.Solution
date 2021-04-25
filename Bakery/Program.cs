@@ -11,9 +11,7 @@ namespace Bakery
       Console.WriteLine("Here's our menu:");
       
       Console.WriteLine("------------------------------------------------");
-      // Console.WriteLine("Loaves of bread: $" + Bread.PricePerItem + " each. Buy 2, get 1 free!");
       Console.WriteLine(Bread.MenuMessage);
-      // Console.WriteLine("Pastries: $" + Pastry.PricePerItem + " each, or get 3 for $5.");
       Console.WriteLine(Pastry.MenuMessage);
       Console.WriteLine("------------------------------------------------");
       
@@ -25,10 +23,13 @@ namespace Bakery
       Console.WriteLine("How many pastries would you like?");
       int pastryCount = int.Parse(Console.ReadLine());
 
-      Bread bread =  new Bread(breadCount);
-      Pastry pastry = new Pastry(pastryCount);
+      Bread breadOrder =  new Bread(breadCount);
+      Pastry pastryOrder = new Pastry(pastryCount);
+      int total = breadOrder.TotalPrice + pastryOrder.TotalPrice;
 
-      int total = bread.TotalPrice + pastry.TotalPrice;
+      Console.WriteLine("The total cost of " + breadOrder.Count + " loaves of bread is $" + breadOrder.TotalPrice + ".");
+      Console.WriteLine("The total cost of " + pastryOrder.Count + " pastries is $" + pastryOrder.TotalPrice + ".");
+      Console.WriteLine("So, you're total comes to $" + total + "!");
     }
   } 
 }
