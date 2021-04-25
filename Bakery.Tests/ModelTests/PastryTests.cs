@@ -20,5 +20,14 @@ namespace Bakery.Tests
       int result = Pastry.PricePerItem;
       Assert.AreEqual(expectedResult, result);
     }
+    
+    [TestMethod]
+    public void Count_CountIsInitializedCorrectly_12()
+    {
+      int expectedResult = 12;
+      Pastry pastry = new Pastry(expectedResult);
+      int result = pastry.Count;
+      Assert.AreEqual(expectedResult, result);
+    }
   }
 }
