@@ -9,6 +9,12 @@ namespace Bakery.Models
     public Pastry(int count)
     {
       Count = count;
+      TotalPrice = CalculatePrice();
+    }
+
+    private int CalculatePrice()
+    {
+      return PricePerItem;
     }
 
   }
