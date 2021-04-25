@@ -39,5 +39,15 @@ namespace Bakery.Tests
       int result = pastry.TotalPrice;
       Assert.AreEqual(expectedResult, result);
     }
+
+    [TestMethod]
+    public void TotalPrice_TwoPastries_4()
+    {
+      int expectedResult = 4;
+      int count = 2;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
+    }
   }
 }
