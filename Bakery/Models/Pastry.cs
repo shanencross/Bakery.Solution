@@ -8,7 +8,7 @@ namespace Bakery.Models
 
     public Pastry(int count)
     {
-
+      Count = count;
     }
 
   }
