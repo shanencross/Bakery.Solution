@@ -14,7 +14,8 @@ namespace Bakery.Models
 
     private int CalculatePrice()
     {
-      return PricePerItem;
+      int totalPrice = PricePerItem * Count;
+      return totalPrice;
     }
 
   }
