@@ -50,7 +50,7 @@ namespace Bakery.Tests
       Assert.AreEqual(expectedResult, result);
     }
 
-        [TestMethod]
+    [TestMethod]
     public void TotalPrice_GetThreeForFiveDeal_5()
     {
       int expectedResult = 5;
