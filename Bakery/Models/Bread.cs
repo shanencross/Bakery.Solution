@@ -4,6 +4,8 @@ namespace Bakery.Models {
     public int Count { get; }
     public int TotalPrice { get; }
 
+    public static string MenuMessage { get; }
+
     public Bread(int count)
     {
       Count = count;

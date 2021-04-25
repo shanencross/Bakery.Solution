@@ -11,8 +11,10 @@ namespace Bakery
       Console.WriteLine("Here's our menu:");
       
       Console.WriteLine("------------------------------------------------");
-      Console.WriteLine("Loaves of bread: $5 each. Buy 2, get 1 free!");
-      Console.WriteLine("Pastries: $2 each, or get 3 for $5.");
+      // Console.WriteLine("Loaves of bread: $" + Bread.PricePerItem + " each. Buy 2, get 1 free!");
+      Console.WriteLine(Bread.MenuMessage);
+      // Console.WriteLine("Pastries: $" + Pastry.PricePerItem + " each, or get 3 for $5.");
+      Console.WriteLine(Pastry.MenuMessage);
       Console.WriteLine("------------------------------------------------");
       
       Console.WriteLine("May I take your order?");
