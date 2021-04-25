@@ -12,11 +12,7 @@ namespace Bakery.Models {
 
     private int CalculatePrice()
     {
-      int noDealPrice = PricePerItem * Count;
-      int dealCount = Count / 3;
-      int dealDiscount = PricePerItem * dealCount;
-      int totalPrice = noDealPrice - dealDiscount;
-
+      int totalPrice = PricePerItem * (Count - (Count / 3));
       return totalPrice;
     }
   }
