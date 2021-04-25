@@ -111,6 +111,7 @@ namespace Bakery.Tests
       Assert.AreEqual(expectedResult, result);
     }
 
+    [TestMethod]
     public void TotalPrice_GetTwentyNineBreadsWithDeals_100()
     {
       int expectedResult = 100;
