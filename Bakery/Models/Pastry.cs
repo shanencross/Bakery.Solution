@@ -13,10 +13,21 @@ namespace Bakery.Models
       TotalPrice = CalculatePrice();
     }
 
+    static Pastry()
+    {
+      MenuMessage = GetMenuMessage();
+    }
+
     private int CalculatePrice()
     {
       int totalPrice = PricePerItem * Count - Count / 3;
       return totalPrice;
+    }
+
+    private static string GetMenuMessage()
+    {
+      string message = "Pastries: $" + PricePerItem + " each, or get 3 for $5.";
+      return message;
     }
 
   }
