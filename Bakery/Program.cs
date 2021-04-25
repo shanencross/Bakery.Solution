@@ -29,7 +29,7 @@ namespace Bakery
 
       Console.WriteLine("The total cost of " + breadOrder.Count + " loaves of bread is $" + breadOrder.TotalPrice + ".");
       Console.WriteLine("The total cost of " + pastryOrder.Count + " pastries is $" + pastryOrder.TotalPrice + ".");
-      Console.WriteLine("So, you're total comes to $" + total + "!");
+      Console.WriteLine("So, your total comes to $" + total + "!");
     }
   } 
 }
