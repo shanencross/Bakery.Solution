@@ -28,6 +28,16 @@ namespace Bakery.Tests
       Pastry pastry = new Pastry(expectedResult);
       int result = pastry.Count;
       Assert.AreEqual(expectedResult, result);
+    }    
+    
+    [TestMethod]
+    public void TotalPrice_OnePastry_2()
+    {
+      int expectedResult = 2;
+      int count = 1;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
     }
   }
 }
