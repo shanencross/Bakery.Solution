@@ -120,5 +120,13 @@ namespace Bakery.Tests
       int result = bread.TotalPrice;
       Assert.AreEqual(expectedResult, result);
     }
+
+    [TestMethod]
+    public void MenuMessage_ReturnsCorrectMessage_String()
+    {
+      string expectedMessage = "Loaves of bread: $5 each. Buy 2, get 1 free!";
+      string result = Pastry.MenuMessage;
+      Assert.AreEqual(expectedMessage, result);
+    }
   }
 }
