@@ -125,7 +125,7 @@ namespace Bakery.Tests
     public void MenuMessage_ReturnsCorrectMessage_String()
     {
       string expectedMessage = "Loaves of bread: $5 each. Buy 2, get 1 free!";
-      string result = Pastry.MenuMessage;
+      string result = Bread.MenuMessage;
       Assert.AreEqual(expectedMessage, result);
     }
   }
