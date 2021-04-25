@@ -3,7 +3,6 @@ namespace Bakery.Models
   public class Bread : MenuItem
   {
     public static int PricePerItem { get; } = 5;
-
     public static string MenuMessage { get; }
 
     public Bread(int count) : base(count)

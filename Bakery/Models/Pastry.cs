@@ -25,6 +25,5 @@ namespace Bakery.Models
       string message = "Pastries: $" + PricePerItem + " each, or get 3 for $5.";
       return message;
     }
-
   }
 }
