@@ -59,5 +59,65 @@ namespace Bakery.Tests
       int result = pastry.TotalPrice;
       Assert.AreEqual(expectedResult, result);
     }
+
+    [TestMethod]
+    public void TotalPrice_FourPastriesWithDeal_7()
+    {
+      int expectedResult = 7;
+      int count = 4;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
+    }
+
+    [TestMethod]
+    public void TotalPrice_FivePastriesWithDeal_9()
+    {
+      int expectedResult = 9;
+      int count = 5;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
+    }
+
+    [TestMethod]
+    public void TotalPrice_GetTwoDealsByBuyingSixPastries_10()
+    {
+      int expectedResult = 10;
+      int count = 6;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
+    }
+    
+    [TestMethod]
+    public void TotalPrice_SevenPastriesWithDeals_12()
+    {
+      int expectedResult = 12;
+      int count = 7;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
+    }
+    
+    [TestMethod]
+    public void TotalPrice_GetThreeDeals_15()
+    {
+      int expectedResult = 15;
+      int count = 9;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
+    }
+
+    [TestMethod]
+    public void TotalPrice_GetFortySevenPastriesWithDeals_79()
+    {
+      int expectedResult = 79;
+      int count = 47;
+      Pastry pastry = new Pastry(count);
+      int result = pastry.TotalPrice;
+      Assert.AreEqual(expectedResult, result);
+    }
   }
 }
